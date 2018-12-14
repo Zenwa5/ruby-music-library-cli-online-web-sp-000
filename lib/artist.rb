@@ -1,4 +1,6 @@
 class Artist
+  extend Concerns::Findable
+ include Concerns::Findable::InstanceMethods
 
   attr_accessor :name, :song
 

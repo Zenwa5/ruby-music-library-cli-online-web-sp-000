@@ -1,4 +1,6 @@
 class Genre
+  extend Concerns::Findable
+  include Concerns::Findable::InstanceMethods
 
   attr_accessor :name, :songs
 
